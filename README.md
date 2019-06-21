@@ -8,44 +8,52 @@
 ## [Padao](https://pandao.github.io/editor.md/en.html) markdown editor used for this file
 
 
-**Table of Contents**
-
-[TOCM]
-
-[TOC]
-
-## [OOP](https://github.com/pandao/editor.md)
-## [Classes](https://github.com/pandao/editor.md)
-## [Class variables](https://github.com/pandao/editor.md)
-## [Class methods and staticmethods](https://github.com/pandao/editor.md)
-## [Inheritance](https://github.com/pandao/editor.md)
-## [Magic / Dunder methods](https://github.com/pandao/editor.md)
-## [Decorators, getters, setters, deleters](https://github.com/pandao/editor.md)
+# Table of Contents
 
 
-## Headers (Underline)
+1. [Classes](#classes)
+2. [Class variables](#class-variables)
+3. [Class methods and staticmethods](#class-methods-and-staticmethods)
+4. [Inheritance](#inheritance)
+5. [Magic / Dunder methods](#magic-dunder-methods)
+6. [Decorators, getters, setters, deleters](#Decorators-getters-setters-deleters)
 
-H1 Header (Underline)
-=============
 
-H2 Header (Underline)
--------------
+### Classes
 
-**Table of Contents**
+```python
+# Python OOP 1 Classes
 
-[TOCM]
+class Employee:
+    def __init__(self,first, last,pay):
+        self.first = first
+        self.last = last
+        self.pay = pay
+        self.email = first + '.' + last + '@company.com'
 
-[TOC]
+    def fullname(self):
+        return self.first + ' ' + self.last
+    
 
-#H1 header
-##H2 header
-###H3 header
-####H4 header
-#####H5 header
-######H6 header
-#Heading 1 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-##Heading 2 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-###Heading 3 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-####Heading 4 link [Heading link](https://github.com/pandao/editor.md "Heading link") Heading link [Heading link](https://github.com/pandao/editor.md "Heading link")
-#####Heading 5 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-######Heading 6 link [Heading link](https://github.com/pandao/editor.md "Heading link")
+empl_1 = Employee('Gökay','Gürsoy',50000)
+empl_2 = Employee('İpek','Gürsoy',90000)
+
+# print(empl_1)
+# print(empl_1)
+
+# print(empl_1.email)
+# print(empl_2.email)
+
+# print('{} {}'.format(empl_1.first,empl_1.last))
+print (empl_1.fullname())
+
+print(Employee.fullname(empl_1))
+
+```
+
+### Class variables
+### Class methods and staticmethods
+### Inheritance
+### Magic / Dunder methods
+### Decorators, getters, setters, deleters
+
